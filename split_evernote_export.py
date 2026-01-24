@@ -82,7 +82,14 @@ def normalize_folder_uri(folder_uri):
     return f"{folder_uri}/"
 
 
-def build_index_enml(note_items, index_title, source_name, folder_uri, issues_url):
+def build_index_enml(
+    note_items,
+    index_title,
+    source_name,
+    folder_uri,
+    issues_url,
+    index_comment,
+):
     folder_uri = normalize_folder_uri(folder_uri)
     rows = "\n".join(
         "\n".join(
@@ -113,6 +120,7 @@ def build_index_enml(note_items, index_title, source_name, folder_uri, issues_ur
             '<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd">',
             "<en-note>",
             f"<h1>{html.escape(index_title)}</h1>",
+            f"<p><i>{html.escape(index_comment)}</i></p>" if index_comment else "",
             (
                 "<p><i>How to use:</i> Click a filename to reveal the file in "
                 "Finder, then import the ENEX file via Evernote &rarr; "
@@ -160,6 +168,7 @@ def build_index_enex(
     source_name,
     folder_uri,
     issues_url,
+    index_comment,
 ):
     created = utc_timestamp()
     enml = build_index_enml(
@@ -168,6 +177,7 @@ def build_index_enex(
         source_name,
         folder_uri,
         issues_url,
+        index_comment,
     )
     note_xml = "\n".join(
         [
@@ -247,6 +257,11 @@ def main():
         default="vault-index.enex",
         help="Filename for the index ENEX (default: vault-index.enex).",
     )
+    parser.add_argument(
+        "--add-comment",
+        default="",
+        help="Add a short comment near the top of the compendium index.",
+    )
     args = parser.parse_args()
 
     source_path = Path(args.source).expanduser().resolve()
@@ -271,6 +286,7 @@ def main():
             source_path.stem,
             output_dir.resolve().as_uri(),
             ISSUES_URL,
+            args.add_comment,
         )
         index_path = output_dir / args.index_name
         if not args.dry_run:
