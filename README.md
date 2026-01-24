@@ -20,18 +20,24 @@ I’m solving this problem for myself first and sharing the design publicly in c
 
 ## Tools
 ### Split an ENEX into per-note files
-This repo includes a small helper to split a notebook ENEX export into one ENEX file per note.
+This repo includes a helper to split a notebook ENEX export into one ENEX file per note, and optionally generate a compendium index note.
 
-Example:
+Example using the demo notebook in this repo:
 ```bash
-python split_evernote_export.py "/Users/dhk/Downloads/evernote-export/!!Knee Replacement Surgery.enex"
+python split_evernote_export.py "/Users/dhk/Documents/dev/evernote-local-archive/samples/food-demo-notes.enex"
 ```
 
-By default, output goes to a sibling folder named `!!Knee Replacement Surgery-notes/`.
+By default, output goes to a sibling folder named `food-demo-notes-notes/`.
 You can override with:
 ```bash
 python split_evernote_export.py "/path/to/notebook.enex" --output-dir "/path/to/output"
 ```
+
+Additional features:
+- `--with-index`: write a compendium ENEX with a table of notes, human-readable dates, and “Show in Finder” links.
+- `--index-title`: set the compendium note title (default: `vault-index`).
+- `--index-name`: set the compendium filename (default: `vault-index.enex`).
+- `--dry-run`: parse and plan outputs without writing files.
 
 ## Issues and Questions
 Have a question, suggestion, or bug report? Please open a GitHub issue for this repo.
