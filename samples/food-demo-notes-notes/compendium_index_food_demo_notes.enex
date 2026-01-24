@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE en-export SYSTEM "http://xml.evernote.com/pub/evernote-export4.dtd">
+<en-export date="20260124T221639Z" application="Cursor" version="10.0" export-date="20260124T225040Z">
+<note>
+<title>compendium_index_food_demo_notes</title>
+<content><![CDATA[
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd">
+<en-note>
+<h1>compendium_index_food_demo_notes</h1>
+<p><i>How to use:</i> Click a filename to reveal the file in Finder, then import the ENEX file via Evernote &rarr; File &rarr; Import.</p>
+<p>Compendium for <b>food-demo-notes</b>. Total notes: <b>8</b>.</p>
+<table border="1" cellpadding="6" cellspacing="0">
+<thead>
+<tr>
+<th>Title</th>
+<th>Created</th>
+<th>Filename</th>
+<th>Show in Finder</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Food Demo Overview</td>
+<td>2026-01-24 22:16:39 UTC</td>
+<td><a href="file:///Users/dhk/Documents/dev/evernote-local-archive/samples/food-demo-notes-notes/2026-01-24__food-demo-overview.enex">2026-01-24__food-demo-overview.enex</a></td>
+<td><a href="file:///Users/dhk/Documents/dev/evernote-local-archive/samples/food-demo-notes-notes/">Show in Finder</a></td>
+</tr>
+<tr>
+<td>Food Chemistry: The Maillard Reaction</td>
+<td>2026-01-24 22:16:39 UTC</td>
+<td><a href="file:///Users/dhk/Documents/dev/evernote-local-archive/samples/food-demo-notes-notes/2026-01-24__food-chemistry-the-maillard-reaction.enex">2026-01-24__food-chemistry-the-maillard-reaction.enex</a></td>
+<td><a href="file:///Users/dhk/Documents/dev/evernote-local-archive/samples/food-demo-notes-notes/">Show in Finder</a></td>
+</tr>
+<tr>
+<td>Food Physics: Heat Transfer in Cooking</td>
+<td>2026-01-24 22:16:39 UTC</td>
+<td><a href="file:///Users/dhk/Documents/dev/evernote-local-archive/samples/food-demo-notes-notes/2026-01-24__food-physics-heat-transfer-in-cooking.enex">2026-01-24__food-physics-heat-transfer-in-cooking.enex</a></td>
+<td><a href="file:///Users/dhk/Documents/dev/evernote-local-archive/samples/food-demo-notes-notes/">Show in Finder</a></td>
+</tr>
+<tr>
+<td>Eggs: Importance in Diets</td>
+<td>2026-01-24 22:16:39 UTC</td>
+<td><a href="file:///Users/dhk/Documents/dev/evernote-local-archive/samples/food-demo-notes-notes/2026-01-24__eggs-importance-in-diets.enex">2026-01-24__eggs-importance-in-diets.enex</a></td>
+<td><a href="file:///Users/dhk/Documents/dev/evernote-local-archive/samples/food-demo-notes-notes/">Show in Finder</a></td>
+</tr>
+<tr>
+<td>Coffee: History and Spread</td>
+<td>2026-01-24 22:16:39 UTC</td>
+<td><a href="file:///Users/dhk/Documents/dev/evernote-local-archive/samples/food-demo-notes-notes/2026-01-24__coffee-history-and-spread.enex">2026-01-24__coffee-history-and-spread.enex</a></td>
+<td><a href="file:///Users/dhk/Documents/dev/evernote-local-archive/samples/food-demo-notes-notes/">Show in Finder</a></td>
+</tr>
+<tr>
+<td>Gin in England: Social Impact</td>
+<td>2026-01-24 22:16:39 UTC</td>
+<td><a href="file:///Users/dhk/Documents/dev/evernote-local-archive/samples/food-demo-notes-notes/2026-01-24__gin-in-england-social-impact.enex">2026-01-24__gin-in-england-social-impact.enex</a></td>
+<td><a href="file:///Users/dhk/Documents/dev/evernote-local-archive/samples/food-demo-notes-notes/">Show in Finder</a></td>
+</tr>
+<tr>
+<td>The Fork: A Brief History</td>
+<td>2026-01-24 22:16:39 UTC</td>
+<td><a href="file:///Users/dhk/Documents/dev/evernote-local-archive/samples/food-demo-notes-notes/2026-01-24__the-fork-a-brief-history.enex">2026-01-24__the-fork-a-brief-history.enex</a></td>
+<td><a href="file:///Users/dhk/Documents/dev/evernote-local-archive/samples/food-demo-notes-notes/">Show in Finder</a></td>
+</tr>
+<tr>
+<td>Embedded Photo: Strawberries</td>
+<td>2026-01-24 22:16:39 UTC</td>
+<td><a href="file:///Users/dhk/Documents/dev/evernote-local-archive/samples/food-demo-notes-notes/2026-01-24__embedded-photo-strawberries.enex">2026-01-24__embedded-photo-strawberries.enex</a></td>
+<td><a href="file:///Users/dhk/Documents/dev/evernote-local-archive/samples/food-demo-notes-notes/">Show in Finder</a></td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<p><b>Links</b></p>
+<ul>
+<li><a href="file:///Users/dhk/Documents/dev/evernote-local-archive/README.md#issues-and-questions">Issues and Questions</a></li>
+<li><a href="https://dhkondata.substack.com/">DHK On Data and AI (Substack)</a></li>
+<li><a href="https://www.linkedin.com/in/davehk/">LinkedIn</a></li>
+</ul>
+</en-note>
+]]></content>
+<created>20260124T225040Z</created>
+<updated>20260124T225040Z</updated>
+</note>
+</en-export>

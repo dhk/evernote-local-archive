@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE en-export SYSTEM "http://xml.evernote.com/pub/evernote-export4.dtd">
+<en-export date="20260124T221639Z" application="Cursor" version="10.0" export-date="20260124T225040Z">
+<note>
+    <title>Gin in England: Social Impact</title>
+    <content>
+<![CDATA[
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE en-note SYSTEM 'http://xml.evernote.com/pub/enml2.dtd'>
+<en-note>
+<h2>Gin in England and social harm</h2>
+<ul>
+  <li>Gin originated in the Netherlands and was introduced to England by soldiers returning from the Low Countries.</li>
+  <li>In the 18th century, cheap gin consumption became a major social problem in England.</li>
+</ul>
+<p>Hogarth's 1751 print <i>Gin Lane</i> includes the inscription:</p>
+<blockquote>"Drunk for a Penny / Dead Drunk for two pence / Clean Straw for Nothing"</blockquote>
+<p>This line underscores how cheap gin fueled harmful social conditions.</p>
+<p>References: <a href="https://www.britannica.com/topic/gin-liquor">Britannica: Gin</a>; <a href="https://www.royalacademy.org.uk/art-artists/work-of-art/gin-lane-1">Royal Academy of Arts: Gin Lane</a></p>
+<p>Attachment (PDF):</p>
+<en-media type="application/pdf" hash="62cc3e0bda8a8f8353caf1303369e933"/>
+</en-note>
+]]>
+    </content>
+    <created>20260124T221639Z</created>
+    <updated>20260124T221639Z</updated>
+    <resource>
+      <data encoding="base64">JVBERi0xLjQKMSAwIG9iago8PCAvVHlwZSAvQ2F0YWxvZyAvUGFnZXMgMiAwIFIgPj4KZW5kb2JqCjIgMCBvYmoKPDwgL1R5cGUgL1BhZ2VzIC9LaWRzIFszIDAgUl0gL0NvdW50IDEgPj4KZW5kb2JqCjMgMCBvYmoKPDwgL1R5cGUgL1BhZ2UgL1BhcmVudCAyIDAgUiAvTWVkaWFCb3ggWzAgMCA2MTIgNzkyXSAvQ29udGVudHMgNCAwIFIgL1Jlc291cmNlcyA8PCAvRm9udCA8PCAvRjEgNSAwIFIgPj4gPj4gPj4KZW5kb2JqCjQgMCBvYmoKPDwgL0xlbmd0aCA1NyA+PgpzdHJlYW0KQlQgL0YxIDE4IFRmIDcyIDcyMCBUZCAoRGVtbyBhdHRhY2htZW50OiBHaW4gTGFuZSkgVGogRVQKZW5kc3RyZWFtCmVuZG9iago1IDAgb2JqCjw8IC9UeXBlIC9Gb250IC9TdWJ0eXBlIC9UeXBlMSAvQmFzZUZvbnQgL0hlbHZldGljYSA+PgplbmRvYmoKeHJlZgowIDYKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDA5IDAwMDAwIG4gCjAwMDAwMDAwNTggMDAwMDAgbiAKMDAwMDAwMDExNSAwMDAwMCBuIAowMDAwMDAwMjQxIDAwMDAwIG4gCjAwMDAwMDAzNDcgMDAwMDAgbiAKdHJhaWxlcgo8PCAvU2l6ZSA2IC9Sb290IDEgMCBSID4+CnN0YXJ0eHJlZgo0MTcKJSVFT0YK</data>
+      <mime>application/pdf</mime>
+      <resource-attributes>
+        <file-name>demo-gin-lane.pdf</file-name>
+      </resource-attributes>
+    </resource>
+  </note>
+</en-export>

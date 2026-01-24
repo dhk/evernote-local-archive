@@ -18,6 +18,24 @@ I’m solving this problem for myself first and sharing the design publicly in c
 - A note-taking app
 - A promise of long-term maintenance
 
+## Tools
+### Split an ENEX into per-note files
+This repo includes a small helper to split a notebook ENEX export into one ENEX file per note.
+
+Example:
+```bash
+python split_evernote_export.py "/Users/dhk/Downloads/evernote-export/!!Knee Replacement Surgery.enex"
+```
+
+By default, output goes to a sibling folder named `!!Knee Replacement Surgery-notes/`.
+You can override with:
+```bash
+python split_evernote_export.py "/path/to/notebook.enex" --output-dir "/path/to/output"
+```
+
+## Issues and Questions
+Have a question, suggestion, or bug report? Please open a GitHub issue for this repo.
+
 ## Status
 Design-only. Feedback welcome.
 

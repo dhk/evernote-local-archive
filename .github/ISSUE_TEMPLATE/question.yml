@@ -1,0 +1,14 @@
+name: Question
+description: Ask a question or request clarification.
+title: "[Question] "
+labels:
+  - question
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: What would you like to know?
+      description: Provide as much context as possible.
+      placeholder: "I have a question about..."
+    validations:
+      required: true
