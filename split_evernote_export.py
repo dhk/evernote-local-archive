@@ -8,6 +8,7 @@ from pathlib import Path
 
 
 EN_EXPORT_DTD = "http://xml.evernote.com/pub/evernote-export4.dtd"
+ISSUES_URL = "https://github.com/dhk/evernote-local-archive/issues"
 
 
 def utc_timestamp():
@@ -23,7 +24,7 @@ def parse_export_attrs(text):
     if "export-date" not in attrs:
         attrs["export-date"] = utc_timestamp()
     if "application" not in attrs:
-        attrs["application"] = "evernote-local-archive"
+        attrs["application"] = "evernote-local-vault"
     if "version" not in attrs:
         attrs["version"] = "1.0"
     return attrs
@@ -81,7 +82,7 @@ def normalize_folder_uri(folder_uri):
     return f"{folder_uri}/"
 
 
-def build_index_enml(note_items, index_title, source_name, folder_uri, readme_uri):
+def build_index_enml(note_items, index_title, source_name, folder_uri, issues_url):
     folder_uri = normalize_folder_uri(folder_uri)
     rows = "\n".join(
         "\n".join(
@@ -137,12 +138,16 @@ def build_index_enml(note_items, index_title, source_name, folder_uri, readme_ur
             "</tbody>",
             "</table>",
             "<hr/>",
-            "<p><b>Links</b></p>",
-            "<ul>",
-            f"<li><a href=\"{html.escape(readme_uri)}\">Issues and Questions</a></li>",
-            "<li><a href=\"https://dhkondata.substack.com/\">DHK On Data and AI (Substack)</a></li>",
-            "<li><a href=\"https://www.linkedin.com/in/davehk/\">LinkedIn</a></li>",
-            "</ul>",
+            (
+                "<p>"
+                "<b>About the author:</b> "
+                f"<a href=\"{html.escape(issues_url)}\">Issues and Questions</a>"
+                " &middot; "
+                "<a href=\"https://dhkondata.substack.com/\">DHK On Data and AI</a>"
+                " &middot; "
+                "<a href=\"https://www.linkedin.com/in/davehk/\">LinkedIn</a>"
+                "</p>"
+            ),
             "</en-note>",
         ]
     )
@@ -154,7 +159,7 @@ def build_index_enex(
     index_title,
     source_name,
     folder_uri,
-    readme_uri,
+    issues_url,
 ):
     created = utc_timestamp()
     enml = build_index_enml(
@@ -162,7 +167,7 @@ def build_index_enex(
         index_title,
         source_name,
         folder_uri,
-        readme_uri,
+        issues_url,
     )
     note_xml = "\n".join(
         [
@@ -259,16 +264,13 @@ def main():
     print(f"Wrote {len(outputs)} notes to {output_dir}")
 
     if args.with_index:
-        repo_root = Path(__file__).resolve().parent
-        readme_uri = (repo_root / "README.md").resolve().as_uri()
-        readme_uri = f"{readme_uri}#issues-and-questions"
         index_enex = build_index_enex(
             attrs,
             outputs,
             args.index_title,
             source_path.stem,
             output_dir.resolve().as_uri(),
-            readme_uri,
+            ISSUES_URL,
         )
         index_path = output_dir / args.index_name
         if not args.dry_run:

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE en-export SYSTEM "http://xml.evernote.com/pub/evernote-export4.dtd">
-<en-export date="20260124T221639Z" application="Cursor" version="10.0" export-date="20260124T225040Z">
+<en-export date="20260124T221639Z" application="Cursor" version="10.0" export-date="20260124T225705Z">
 <note>
 <title>compendium_index_food_demo_notes</title>
 <content><![CDATA[
@@ -71,15 +71,10 @@
 </tbody>
 </table>
 <hr/>
-<p><b>Links</b></p>
-<ul>
-<li><a href="file:///Users/dhk/Documents/dev/evernote-local-archive/README.md#issues-and-questions">Issues and Questions</a></li>
-<li><a href="https://dhkondata.substack.com/">DHK On Data and AI (Substack)</a></li>
-<li><a href="https://www.linkedin.com/in/davehk/">LinkedIn</a></li>
-</ul>
+<p><b>About the author:</b> <a href="https://github.com/dhk/evernote-local-archive/issues">Issues and Questions</a> &middot; <a href="https://dhkondata.substack.com/">DHK On Data and AI</a> &middot; <a href="https://www.linkedin.com/in/davehk/">LinkedIn</a></p>
 </en-note>
 ]]></content>
-<created>20260124T225040Z</created>
-<updated>20260124T225040Z</updated>
+<created>20260124T225705Z</created>
+<updated>20260124T225705Z</updated>
 </note>
 </en-export>

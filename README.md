@@ -1,4 +1,4 @@
-# Evernote Local Archive (Design Draft)
+# Evernote Local Vault (Design Draft)
 
 This repository contains early design notes for a **local-first, open-source workflow** to archive old Evernote notes while preserving searchability and user control.
 

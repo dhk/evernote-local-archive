@@ -1,7 +1,7 @@
 > **Note:** This document is an early design draft shared for feedback.
 > The author is building this primarily for personal use and is validating assumptions publicly before writing much code.
 
-# Local-First Evernote Archive — Design Draft
+# Local-First Evernote Vault — Design Draft
 
 > **Status:** Early design draft, shared for feedback
 > **Intent:** Solve a personal problem first; validate assumptions publicly before building significant tooling
