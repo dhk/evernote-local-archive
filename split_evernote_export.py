@@ -57,6 +57,16 @@ def humanize_created(created):
         return created
 
 
+def date_only(created):
+    if not created:
+        return None
+    try:
+        dt = datetime.strptime(created, "%Y%m%dT%H%M%SZ")
+        return dt.strftime("%Y-%b-%d")
+    except ValueError:
+        return None
+
+
 def extract_note_fields(note_inner):
     title_match = re.search(r"<title>(.*?)</title>", note_inner, flags=re.S)
     created_match = re.search(r"<created>(.*?)</created>", note_inner, flags=re.S)
@@ -91,6 +101,10 @@ def build_index_enml(
     index_comment,
 ):
     folder_uri = normalize_folder_uri(folder_uri)
+    date_values = [date_only(item["created"]) for item in note_items]
+    date_values = [value for value in date_values if value]
+    earliest = min(date_values) if date_values else "unknown"
+    latest = max(date_values) if date_values else "unknown"
     rows = "\n".join(
         "\n".join(
             [
@@ -128,10 +142,13 @@ def build_index_enml(
             ),
             (
                 "<p>"
-                f"Compendium for <b>{html.escape(source_name)}</b>. "
-                f"Total notes: <b>{len(note_items)}</b>."
+                f"Compendium for <b>{html.escape(source_name)}</b>."
                 "</p>"
             ),
+            "<ul>",
+            f"<li>Total notes: <b>{len(note_items)}</b>.</li>",
+            f"<li>Date range: <b>{earliest}</b> to <b>{latest}</b>.</li>",
+            "</ul>",
             "<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\">",
             "<thead>",
             "<tr>",
@@ -148,12 +165,11 @@ def build_index_enml(
             "<hr/>",
             (
                 "<p>"
-                "<b>About the author:</b> "
-                f"<a href=\"{html.escape(issues_url)}\">Issues and Questions</a>"
-                " &middot; "
-                "<a href=\"https://dhkondata.substack.com/\">DHK On Data and AI</a>"
-                " &middot; "
-                "<a href=\"https://www.linkedin.com/in/davehk/\">LinkedIn</a>"
+                f"<a href=\"{html.escape(issues_url)}\">Ask Questions Here</a>"
+                " | "
+                "<a href=\"https://dhkondata.substack.com/p/fa4a5454-b5c5-4ec7-a5bc-0d444a862595\">About This Project</a>"
+                " | "
+                "<a href=\"https://www.linkedin.com/in/davehk/\">About The Author</a>"
                 "</p>"
             ),
             "</en-note>",
@@ -171,6 +187,7 @@ def build_index_enex(
     index_comment,
 ):
     created = utc_timestamp()
+    created_human = humanize_created(created)
     enml = build_index_enml(
         note_items,
         index_title,
@@ -186,8 +203,8 @@ def build_index_enex(
             "<content><![CDATA[",
             enml,
             "]]></content>",
-            f"<created>{created}</created>",
-            f"<updated>{created}</updated>",
+            f"<created>{created_human}</created>",
+            f"<updated>{created_human}</updated>",
             "</note>",
         ]
     )

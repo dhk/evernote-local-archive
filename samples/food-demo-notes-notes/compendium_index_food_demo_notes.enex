@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE en-export SYSTEM "http://xml.evernote.com/pub/evernote-export4.dtd">
-<en-export date="20260124T221639Z" application="Cursor" version="10.0" export-date="20260124T225705Z">
+<en-export date="20260124T221639Z" application="Cursor" version="10.0" export-date="20260125T015452Z">
 <note>
 <title>compendium_index_food_demo_notes</title>
 <content><![CDATA[
@@ -8,8 +8,13 @@
 <!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd">
 <en-note>
 <h1>compendium_index_food_demo_notes</h1>
+
 <p><i>How to use:</i> Click a filename to reveal the file in Finder, then import the ENEX file via Evernote &rarr; File &rarr; Import.</p>
-<p>Compendium for <b>food-demo-notes</b>. Total notes: <b>8</b>.</p>
+<p>Compendium for <b>food-demo-notes</b>.</p>
+<ul>
+<li>Total notes: <b>8</b>.</li>
+<li>Date range: <b>2026-Jan-24</b> to <b>2026-Jan-24</b>.</li>
+</ul>
 <table border="1" cellpadding="6" cellspacing="0">
 <thead>
 <tr>
@@ -71,10 +76,10 @@
 </tbody>
 </table>
 <hr/>
-<p><b>About the author:</b> <a href="https://github.com/dhk/evernote-local-archive/issues">Issues and Questions</a> &middot; <a href="https://dhkondata.substack.com/">DHK On Data and AI</a> &middot; <a href="https://www.linkedin.com/in/davehk/">LinkedIn</a></p>
+<p><a href="https://github.com/dhk/evernote-local-archive/issues">Ask Questions Here</a> | <a href="https://dhkondata.substack.com/p/fa4a5454-b5c5-4ec7-a5bc-0d444a862595">About This Project</a> | <a href="https://www.linkedin.com/in/davehk/">About The Author</a></p>
 </en-note>
 ]]></content>
-<created>20260124T225705Z</created>
-<updated>20260124T225705Z</updated>
+<created>2026-01-25 01:54:52 UTC</created>
+<updated>2026-01-25 01:54:52 UTC</updated>
 </note>
 </en-export>
