@@ -55,7 +55,7 @@ In Evernote desktop:
 Tip: You can import a single note ENEX or the compendium file.
 
 ## What a Compendium Index File Looks Like
- <img width="1421" height="783" alt="image" src="https://github.com/user-attachments/assets/e449945b-786e-475a-b34b-e23d66ef8a2f" />
+ <img width="1437" height="799" alt="image" src="https://github.com/user-attachments/assets/2f66f907-8603-441f-9c1a-1f7a626c3c0a" />
 
 
 ## Issues and Questions
